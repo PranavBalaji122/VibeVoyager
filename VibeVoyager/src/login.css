@@ -8,16 +8,17 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: #121212;
 }
-
 .container {
   min-height: 100vh;    
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #121212;
-  width: 100vw;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px;
+  margin: 0 auto;
 }
 
 .login-box {
@@ -25,7 +26,7 @@ body {
   border-radius: 8px;
   background-color: #282828;
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
