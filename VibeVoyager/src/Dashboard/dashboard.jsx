@@ -2,7 +2,7 @@ import { useState } from 'react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
-import handleSubmit from './configuration';
+import handleSubmit from '../utility/configuration.jsx';
 
 function Dashboard() {
     return (
