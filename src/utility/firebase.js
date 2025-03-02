@@ -22,6 +22,16 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 
+// Sign in Anonymously
+const signInAnonymouslyUser = async () => {
+  try {
+    const userCredential = await signInAnonymously(auth);
+    console.log("Anonymous User ID:", userCredential.user.uid);
+  } catch (error) {
+    console.error("Anonymous sign-in failed:", error);
+  }
+};
+
 
 export default app;
-export { auth };
+export { auth , signInAnonymouslyUser };

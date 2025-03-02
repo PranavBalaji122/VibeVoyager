@@ -2,11 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { faCompass, faMap, faHeadphonesAlt } from '@fortawesome/free-solid-svg-icons';
-
-
+import { register } from '../auth/register.jsx';
 
 function Home() {
     console.log('Home component rendering');
+    
+
+
     return (
       <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
         {/* Background Elements */}
@@ -48,8 +50,8 @@ function Home() {
               Explore new music territories based on your unique taste profile. Let Vibe Voyager take you on a personalized journey through sounds you'll love.
             </p>
             <a 
-              href="#" 
-              className="inline-block px-8 py-4 bg-green-500 text-white font-bold rounded-full text-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-green-500/25 relative overflow-hidden opacity-0 transform translate-y-5 animate-slide-up-delay-3"
+              onClick={register} 
+              className="inline-block px-8 py-4 bg-green-500 text-white font-bold rounded-full text-lg transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg hover:shadow-green-500/25 relative overflow-hidden opacity-0 transform translate-y-5 animate-slide-up-delay-3 cursor-pointer"
             >
               <FontAwesomeIcon icon={faSpotify} className="mr-2" /> Log in with Spotify
               <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full hover:animate-shimmer"></span>
